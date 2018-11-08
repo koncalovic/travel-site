@@ -3,10 +3,14 @@
 
 module.exports = {
 	mode: "development",
-	entry: path.resolve(__dirname, "app/assets/scripts/App.js"),
+	entry: {
+		App: path.resolve(__dirname, "app/assets/scripts/App.js"),
+		Vendor: path.resolve(__dirname, "app/assets/scripts/Vendor.js")
+	},
+
 	output: {
 		path: path.resolve(__dirname, "app/temp/scripts"),
-		filename: "App.js"
+		filename: "[name].js"
 	},
 
 	module: {
