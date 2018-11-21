@@ -9,7 +9,7 @@ class Modal {
 	}
 
 	events() {
-		//clicking the open moda button
+		//clicking the open modal button
 		this.openModalButton.click(this.openModal.bind(this));
 
 		//clicking the x close modal button
@@ -27,6 +27,7 @@ class Modal {
 	}
 
 	openModal() {
+		console.log('opening');
 		this.modal.addClass("modal--is-visible");
 		return false;
 	}
